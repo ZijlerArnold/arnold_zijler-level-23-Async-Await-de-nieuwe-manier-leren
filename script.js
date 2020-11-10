@@ -1,17 +1,10 @@
+let log = console.log;
+log(`*******************************`);
 
-//const getData = require("./api-client");
-// let log = console.log;
-// log(`===== Import Data =====`);
-  
+const getData = require("./api-client");
 
-// const getMovies = async () => {
-//     const movies = await getData();
-//     log(movies);
-//     // data.forEach((movie, index) => {
-//     //     output += `<li><button>${movie.name}</button></li>`;     
-//     // });
-//     // document.body.innerHTML = output;
-// }
-// getMovies();
-
-
+const getMovieList = async () => {
+    const movieList = await getData;
+    log(movieList);
+}
+getMovieList();
